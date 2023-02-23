@@ -127,6 +127,7 @@ header ul li {
 .form form {
   display: flex;
   flex-direction: column;
+  padding: 0 16px 0 16px;
 }
 
 .form h1 {
