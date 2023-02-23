@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,300;1,400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./src/css/reset.css" />
@@ -15,14 +15,18 @@
 
     <title>F4LIFE | Moradias Universitárias</title>
   </head>
+
   <body>
     <header>
-      <div><img src="./src/img/logo.png" /></div>
-      <ul>
+      <div class="img"><img src="./src/img/logo.png" /></div>
+      <ul class="menu_lista desktop">
         <li><a href="#">Inicio</a></li>
         <li><a href="#">Quem somos?</a></li>
         <li><a href="#">Entre em contato</a></li>
       </ul>
+      <div class="mobile_header">
+        <a href="#"><img src="./src/img/options.png" alt="Menu de opções"></a>
+      </div>
     </header>
     <section class="container apress">
       <div class="text">
@@ -33,8 +37,8 @@
         <p>F4Life é uma empresa de aluguéis de repúblicas para pessoas universitárias.</p>
         <a href="#"><button>Saiba mais</button></a>
       </div>
-      <div>
-        <img src="./src/img/ilustracaoHome.png" alt="Ilustração jovem com lupa"/>
+      <div class="img">
+        <img src="./src/img/ilustracaoHome.png" alt="Ilustração jovem com lupa" />
       </div>
     </section>
     <section class="container description">
@@ -46,35 +50,61 @@
           ambiente específico e otimizado para a vida de graduação.
         </p>
       </div>
-      <div><img src="./src/img/quemSomos.png" alt="Ilustração leitora em frente a estante de livros"></div>
+      <div>
+        <img src="./src/img/quemSomos.png" alt="Ilustração leitora em frente a estante de livros" />
+      </div>
+      <div class="content mobile">
+        <h3>Veja opinião de nossos clientes</h3>
+        <ul>
+          <li>
+            <img src="./src/img/Ellipse 6.png" alt="Foto perfil" />
+            <h5 class="mobile_name">Astrogildo</h5>
+            <p class="mobile_text">“A F4Life prestou um serviço incrível”</p>
+          </li>
+          <li>
+            <img src="./src/img/Ellipse 7.png" alt="Foto perfil" />
+            <h5 class="mobile_name">Creuza</h5>
+            <p class="mobile_text">“Serviço de qualidade com um preço justo”</p>
+          </li>
+          <li>
+            <img src="./src/img/Ellipse 8.png" alt="Foto perfil" />
+            <h5 class="mobile_name">Jurema</h5>
+            <p class="mobile_text">
+              “Já tive experiência com outras empresas, mas a F4Life, sem duvidas tem o melhor serviço.”
+            </p>
+          </li>
+        </ul>
+      </div>
     </section>
     <section class="container form">
       <form>
         <h1>Entre em contato</h1>
         <div class="form_itens">
           <label class="label" for="email">E-mail</label>
-          <input class="form_input" type="text" id="email">
+          <input class="form_input email" type="text" id="email" />
         </div>
         <div class="form_itens">
           <label class="label" for="mensagem">Mensagem</label>
-          <input class="form_input mensagem" type="text" id="mensagem">
+          <input class="form_input mensagem" type="text" id="mensagem" />
         </div>
         <button class="submit_btn" type="submit" id="btn_submit">Enviar</button>
       </form>
-      <div>
-        <img src="./src/img/contact.png" alt="Ilustração callcenter">
+      <div class="img">
+        <img src="./src/img/contact.png" alt="Ilustração callcenter" />
       </div>
     </section>
     <footer>
-      <div>
-        <img src="./src/img/logo_menor.png" alt="">
+      <div class="footer desktop">
+        <img src="./src/img/logo_menor.png" alt="Logo menor" />
       </div>
-      <div class="lista_links">
-        <a href="https://facebook.com"><img src="./src/img/akar-icons_facebook-fill.png" alt="Icone facebook"></a>
-        <a href="https://linkedin.com"><img src="./src/img/brandico_linkedin-rect.png" alt="Icone linkedin"></a>
-        <a href="https://twitter.com"><img src="./src/img/ant-design_twitter-circle-filled.png" alt="Icone twitter"></a>
+      <div class="footer lista_links">
+        <a href="https://facebook.com"><img src="./src/img/akar-icons_facebook-fill.png" alt="Icone facebook" /></a>
+        <a href="https://linkedin.com"><img src="./src/img/brandico_linkedin-rect.png" alt="Icone linkedin" /></a>
+        <a href="https://twitter.com"
+          ><img src="./src/img/ant-design_twitter-circle-filled.png" alt="Icone twitter"
+        /></a>
       </div>
-      <div>
+      <div class="footer desktop">
         <p>Todos os direitos reservados © 2023 F4LIFE</p>
       </div>
     </footer>

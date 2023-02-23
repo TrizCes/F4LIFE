@@ -6,7 +6,6 @@
 }
 
 body {
-  width: 100vw;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -111,7 +110,10 @@ header ul li {
   font-style: normal;
   font-weight: 400;
   font-size: 30.2308px;
-  line-height: 136.68%;
+}
+
+.mobile {
+  display: none;
 }
 
 .form {
@@ -194,4 +196,206 @@ footer .lista_links {
   width: 25%;
   display: flex;
   justify-content: space-between;
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    width: 100vw;
+  }
+
+  header {
+    width: 90vw;
+    background-color: #132235;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 24px 8px 24px;
+  }
+
+  header img {
+    width: 159px;
+  }
+
+  header .mobile_header a img{
+    width: 21px;
+  }
+
+  .container {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+  }
+
+  .container .img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container img {
+    width: 80vw;
+    align-self: center;
+  }
+
+  .apress {
+    padding: 16px;
+  }
+
+  .apress .text {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .apress h1 {
+    margin: 0;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+  }
+
+  .apress p {
+    margin: 0;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  .apress button {
+    margin: 0;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    align-items: center;
+    width: 85%;
+    border-radius: 10px;
+    padding: 4px;
+  }
+
+  .description {
+    width: 90vw;
+    padding: 16px;
+  }
+
+  .description .text {
+    width: 90vw;
+  }
+
+  .description h2 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+
+  .description p {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: left;
+    margin-bottom: 40px;
+    width: 335px;
+  }
+
+  .mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .mobile div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mobile h3 {
+    width: 324px;
+    margin-top: 64px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--branco);
+    text-align: justify;
+  }
+
+  .mobile ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 16px 0 16px 0;
+  }
+  .mobile ul li img {
+    width: 125px;
+    height: 125px;
+    margin: 48px 4px 4px 4px;
+  }
+  .description ul li .mobile_name {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    color: #ffffff;
+    margin: 4px;
+  }
+
+  .description ul li .mobile_text {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-size: 14px;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .form {
+    width: 90vw;
+    padding: 16px;
+  }
+
+  .form .form_input {
+    border: 0.7px solid #132235;
+    border-radius: 10px;
+  }
+
+  .form .email {
+    width: 335px;
+    height: 31px;
+    padding: 0;
+  }
+
+  .form .mensagem {
+    width: 335px;
+    height: 143px;
+  }
+
+  footer{
+    width: 90%;
+  }
+
+  footer .lista_links {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+  }
 }
